@@ -1,0 +1,158 @@
+:root{
+    --backgroud:cornsilk;
+    --backg:gold;
+    --text_cro:khaki;
+    --branco:#fff;
+    --preto:#000;
+    --sinza:#c2c2c2;
+}
+
+p{
+    margin-top: 50px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.header{
+    align-items: center;
+    text-decoration: underline;
+    font-weight: 500;
+  
+}
+
+.bar{
+    font-size: 23px;
+}
+
+.technical-bars,.bar{
+    margin: 40px 0;
+}
+
+.technical-bars, .bar:first-child{
+    margin-top:  0;
+}
+
+.technical-bars,.bar:last-child{
+    margin-bottom: 0;
+}
+
+.technical-bars, .bar ,.info{
+    margin-bottom: 5px;
+}
+
+.technical-bars, .bar, .info, span{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars, .bar, .procedimento-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px ;
+    background-color: var(--backg);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin:left ;
+}
+
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars, .bar, .procedimento-line span{
+    height: 50%;
+    background-color: var(--backg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    animation:animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin:left;
+}
+
+.procedimento-line.amor, span{
+    width: 90%;
+}
+
+.procedimento-line.paixao, span{
+    width: 60%;
+}
+
+.procedimento-line.dedicacao, span{
+    width: 80%;
+}
+
+.procedimento-line.gosto, span{
+    width: 70%;
+}
+
+.procedimento-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: var(--sinza);
+    font-size:12px ;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.procedimento-line.amor span::after{
+    content: "90%";
+}
+
+.procedimento-line.paixao span::after{
+    content: "60%";
+}
+
+.procedimento-line.dedicacao span::after{
+    content: "80%";
+}
+
+.procedimento-line.gosto span::after{
+    content: "70%";
+}
+
+.procedimento-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText{
+    100%{
+        opacity: 1  ;
+    }
+}
+
+
+.img{
+    margin-left: 800px;
+    margin-top: -400px;
+}

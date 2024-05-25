@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial;
+}
+
+:root{
+    --backgroud:cornsilk;
+    --backg:gold;
+    --text_cro:khaki;
+    --branco:#fff;
+    --preto:#000;
+}
+
+header{
+    border: none;
+    width: 100%;
+    height: 80px;
+    background: var(--branco);
+    box-shadow: 0 0 10px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo{
+    padding-left:100px;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+span{
+    color: var(--backg);
+}
+
+small{
+    font-size: 50px;
+}
+
+nav ul{
+    display: flex;
+    float: right;
+    margin-right: 160px;
+    gap:35px;
+}
+
+ul li   {
+    margin-top: -40px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.btn_cadastro{
+    font-size:18px ;
+    border: none;
+    border-radius: 20px;
+    background: var(--backg);
+    width: 120px;
+    height: 40px;
+    margin-top: -50px;
+    transition: 1s;
+}
+
+.btn_cadastro:hover {
+    background: var(--backgroud);
+}
+a:hover{
+    color: var(--text_cro);
+}
+/*fim menu*/
+
+/*objectivo do projescto*/
+.objectivo_projecto{
+    border: none;
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+}
+
+.object_conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardObjectivo{
+    margin: 20px;
+}
+.cardObjectivo h1{
+    font-size: 45px;
+    font-weight: 50;
+}
+
+.cardObjectivo p{
+    margin: 20px;
+}
+
+.verde{
+    border: 1px solid #000000;
+    background: darkcyan;
+    width: 100%;
+    height: 400px;
+}
+
+.Qualidade{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Qualidade h1 {
+    font-size: 40px;
+    font-weight: 50;
+    color: white;
+}
+
+.Qualidade p{
+    font-weight: 50;
+    color: white;
+    margin: 20px;
+}
+
+.card_objecto{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 200px;
+}
+
+
+.card_obj h3{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 50px;
+    color: white;
+}
+
+.card_obj p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+}
+
+.title h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px ;
+    font-weight: 50;
+}
+
+.begas_card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.begas{
+    margin: 50px;
+}
+
+.recl{
+    margin-top: 40px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background: var(--backg);
+    border-radius:16px ;
+    font-size: 20px;
+}
+/*footer*/
+.footer{
+    margin-top: 80px;
+    border:  none;
+    background: var(--backg);
+}
+
+.footer2{
+    z-index: 2;
+    border: none;
+    width: 100%;
+    height: 300px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+.card_footer{
+    margin-top: 100px;
+
+}
+.logo2{
+    padding-left:100px;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.logo2 small{
+    color:var(--preto);
+}
+.logo2 span{
+    color:var(--branco);
+}
+h6{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p{
+    font-weight: 500;
+    margin-top: 10px;
+}

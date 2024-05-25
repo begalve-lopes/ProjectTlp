@@ -1,0 +1,70 @@
+
+@media ( max-width: 1012px){
+    .logo{
+        text-align: center;
+        font-weight: 500;
+    }
+    nav ul{
+        display: none;
+        float: right;
+        margin-right: 160px;
+        gap:35px;
+    }
+}
+
+@media( max-width: 728px){
+    .logo{
+        text-align: center;
+        padding-left:100px;
+        margin: 5px;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    nav ul{
+        display: none;
+        float: right;
+        margin-right: 160px;
+        gap:35px;
+    }
+
+    .card_inicio{
+        display: block;
+        gap: 150px;
+        margin: 100px;
+    }
+    
+    .waves_svg{
+        z-index: 0;
+        border: none;
+        width: 100%;
+        height: 500px;
+        background: none;
+        padding-bottom:600px ;
+        background-size: cover;
+    }
+
+    .card_hub_todos_card{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    
+    }
+    
+    .car_hub_title{
+        border: 1px solid #000;
+        background: var(--branco);
+        width: 24%;
+        height: 380px;
+        box-shadow: 0 0 10px #000000;
+        z-index: 2;
+        color: var(--backg);
+    }
+
+    .car_hub_title_h5{
+        text-align: center;
+    }
+    
+    .car_hub_title_p{
+        text-align: center;
+    }
+}

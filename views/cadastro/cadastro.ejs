@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+        <div class="fom-id">
+            <div class="form-box cadastro">
+                <h1>Cadastrar</h1>
+                <form action="/cad" method="POST">
+                    <div class="input-box">
+                        <label for="Nome">Nome</label>
+                        <input type="text" name="nome"  required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Email">Email</label>
+                        <input type="eamil" name="email"  required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Numero">Telefone</label>
+                        <input type="text" name="numero"  required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Numero">Password</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <a href="/login">Já estou cadastrado</a>
+                    <input type="submit"  class="btn" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+</body>
+</html>
